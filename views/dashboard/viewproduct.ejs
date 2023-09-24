@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+  </head>
+  <body>
+    <div class="row mb-5"><%- include('./header2.ejs')%></div>
+    <div class="row mt-5">
+      <div class="col-3"><%- include('./left.ejs')%></div>
+      <div class="col-9 mt-5  text-center bg-success ">
+        <div  class="px-3 my-3 text-center">
+          <h1> MENU ITEMS</h1>
+          <p>MENU ITEMS ARE SHOWN HERE</p>
+
+         
+        </div>
+        <% if(menudata.length>0){ %>
+        <table class="table table-border table-danger">
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>DESCRIPTION</th>
+
+            <th>Image</th>
+            <th>Delete/Edit</th>
+           
+            
+          </tr>
+        </thead>
+        <tbody>
+<%for (var i=0;i<menudata.length;i++){%>
+        
+          <tr>
+            <td><%= menudata[i].name %></td>
+            <td><%= menudata[i].price %></td>
+            <td><%= menudata[i].about %></td>
+
+            <td><%= menudata[i].image %></td>
+            <td><a href="/delete1/<%= menudata[i]._id %>"><button class="btn btn-danger my-2">DELETE</button></a>
+              <a href="/edit1/<%= menudata[i]._id %>"><button class="btn btn-danger">EDIT</button></a>
+            </td>
+
+
+          </tr>
+          <% } %>
+         
+
+          </tbody>
+        </table> 
+        <% }else {%>
+NO record found
+        <% } %>
+
+      </div>
+    </div>
+  </body>
+</html>

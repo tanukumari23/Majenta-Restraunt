@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="C:\Users\tanuk\OneDrive\Desktop\2nd project\views\assets\css\header.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&family=Rajdhani:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar starts  -->
+    <nav class="navbar bg-warning fixed-top">
+      <div class="container-xxl">
+        <div id="myNav" class="overlay">
+          <button
+            type="button"
+            class="btn-close closebtn"
+            aria-label="Close"
+            onclick="closeNav()"
+          ></button>
+
+          <div class="overlay-content">
+            <a href="/">HOME</a>
+
+            <a href="/aboutus">ABOUT US</a>
+            <a href="/gallery">GALLERY</a>
+            <a href="/reservation">RESERVATION</a>
+            <a href="/menu">MENU</a>
+            <a href="/contact">CONTACT</a>
+            <a href="/registration">REGISTRATION</a>
+            <a href="/dashboard">DASHBOARD</a>
+
+          </div>
+        </div>
+
+        <span style="font-size: 30px; margin-left: 0%" onclick="openNav()">
+          <i class="fa-solid fa-burger fa-xl" style="color: blueviolet"></i>
+        </span>
+        <a
+          class="navbar-brand mx-auto"
+          style="font-family: dancing-script, Cursive"
+          href="/"
+          >MAGENTA<i class="fa-solid fa-utensils fa-lg mx-2"></i>
+        </a>
+
+        <button
+          type="button"
+          class="btn mx-1 fw-bold"
+          style="background-color: blueviolet"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          data-bs-whatever="@mdo"
+        >
+          LOGIN
+        </button>
+        <!-- <button
+          type="button"
+          class="btn btn-primary mx-1"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          data-bs-whatever="@fat"
+        >
+          REGISTRATION
+        </button> -->
+      </div>
+    </nav>
+    <div
+      class="modal"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered text-white"
+        style="font-weight: 900"
+      >
+        <div
+          class="modal-content"
+          style="
+            opacity: 1;
+            background-image: url(https://img.freepik.com/premium-vector/abstract-smooth-blur-purple-gradient-background-website-banner-paper-card-decorative-design_120819-485.jpg);
+            border-radius: 5%;
+          "
+        >
+          <div class="modal-header pt-5">
+            <h1
+              class="modal-title text-center"
+              id="exampleModalLabel"
+              style="font-size: 20px; font-weight: 900"
+            >
+              LOGIN
+            </h1>
+            <button
+              type="button"
+              class="btn-close bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" style="font-size: 20px">
+            <div class="row">
+              <!-- <img
+                src="https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png"
+                alt=""
+                height="250px"
+                
+              /> -->
+            </div>
+            <form  class="text-start" action="/login" method="post" >
+              <div class="row my-3">
+                <div class="col-3">
+                  <p>Name</p>
+                </div>
+                <div class="col-9" name="fname">
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    class="w-100"
+                  />
+                </div>
+              </div>  
+
+              <div class="row my-3">
+                <div class="col-3">
+                  <p>Email ID</p>
+                </div>
+                <div class="col-9">
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Enter Your email"
+                    class="w-100"
+                  />
+                </div>
+              </div>
+              <div class="row my-3">
+                <div class="col-3">
+                  <p>Password</p>
+                </div>
+                <div class="col-9">
+                  <input
+                    name="password"
+                    type="password"
+                    placeholder="Enter your password"
+                    class="w-100"
+                  />
+                </div>
+              </div> 
+              <div class="modal-footer">
+                <button
+                  type="submit"
+                  class="btn btn-success mt-5"
+                  data-bs-dismiss="modal"
+                >
+                  LOGIN
+                </button>
+                <button
+              type="button"
+              class="btn btn-danger mt-5"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              CANCEL
+            </button>
+            </form>
+          </div>
+          
+            
+            <div class="row">
+              <p class="text-start">
+                Don't have an Account?
+                <a href="/registration" class="text-black"> Register</a>
+                yourself.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar ends  -->
+
+    <div class="container-xxl">
+      <span>
+        <p
+          class="bg-success py-5 px-4 text-center fs-3 fw-bold"
+          style="
+            border-radius: 100%;
+            position: fixed;
+            bottom: 10%;
+            right: 0%;
+            z-index: 2;
+          "
+        >
+          <a href="/menu" style="text-decoration: none; color: white">
+           Menu
+          </a>
+        </p>
+      </span>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+  </body>
+</html>

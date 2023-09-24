@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .dashboard {
+        float: left;
+        border: 1px solid black;
+        background-color: pink;
+        width: 23%;
+        height: 100%;
+        position: fixed;
+        left: 0%;
+      }
+
+      .dashboard li {
+        display: block;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+        font-weight: bold;
+      }
+      ul {
+        list-style-type: none;
+
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: auto;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      li:hover {
+        background-color: red;
+        color: white;
+      }
+
+      li:active {
+        background-color: #ccc;
+      }
+
+      .tabcontent {
+        color: black;
+        float: left;
+        padding: 0px 12px;
+        height: 100%;
+        /* position: relative;
+        top: 10%; */
+        /* width: 100%; */
+        border-left: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard mt-5">
+      <ul>
+        <a href="/dashboard">
+          <li>HOME</li>
+        </a>
+        <a href="/addproduct">
+          <li>ADD PRODUCT</li>
+        </a>
+        <a href="/viewproduct">
+          <li>VIEW PRODUCTS</li>
+        </a>
+        <a href="/viewregistration">
+          <li>VIEW REGISTRATION</li>
+        </a>
+        <a href="/">
+          <li>VIEW WEBSITE</li>
+        </a>
+
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets\css\header.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body style="background-color: antiquewhite">
+    <%- include('./common/header.ejs')%>
+    <div class="container-fluid mt-5 mb-5">
+      <p
+        class="p-5 mt-5 text-start text-white fw-bold fs-1"
+        style="
+          width: 70%;
+          border-radius: 0% 200px 200px 0%;
+          position: absolute;
+          left: 0%;
+          background-color: blueviolet;
+        "
+      >
+        REGISTER YOURSELF
+      </p>
+    </div>
+
+    <main>
+      <div class="container-xxl my-5 text-center" style="padding-top: 200px">
+        <div class="row mt-5 justify-content-center">
+          <div
+            class="col-md-8 p-3 text-white bg-warning"
+            style="border: 2px solid black; box-shadow: 20px 20px 30px black"
+          >
+            <p class="mb-5 fs-2 fw-bold text-black">Registration Form</p>
+            <form
+              action="/registration"
+              method="post"
+              class="text-start fw-bold text-black"
+            >
+              <div class="row my-3">
+                <div class="col-3">
+                  <p>First Name</p>
+                </div>
+                <div class="col-9">
+                  <input
+                    name="fname"
+                    type="text"
+                    placeholder="Enter Your First Name"
+                    class="w-100"
+                  />
+                </div>
+              </div>
+              <div class="row my-3">
+                <div class="col-3">
+                  <p>Last Name</p>
+                </div>
+                <div class="col-9">
+                  <input
+                    name="lname"
+                    type="text"
+                    placeholder="Enter Your Last Name"
+                    class="w-100"
+                  />
+                </div>
+              </div>
+              <div class="row my-3">
+                <div class="col-3">
+                  <p>Phone Number</p>
+                </div>
+                <div class="col-9">
+                  <input
+                    name="phone"
+                    type="text"
+                    placeholder="Enter Your Phone Number"
+                    class="w-100"
+                  />
+                </div>
+              </div>
+              <div class="row my-3">
+                <div class="col-3">
+                  <p>Email Address</p>
+                </div>
+                <div class="col-9">
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="youremail@gmail.com"
+                    class="w-100"
+                  />
+                </div>
+              </div>
+              <div class="row my-3">
+                <div class="col-3">
+                  <p>Password</p>
+                </div>
+                <div class="col-9">
+                  <input
+                    name="password"
+                    type="password"
+                    placeholder="enter your password"
+                    class="w-100"
+                  />
+                </div>
+              </div>
+              <div class="row my-3">
+                <div class="col-3">
+                  <p>State</p>
+                </div>
+                <div class="col-9">
+                  <select name="city" id="cars" class="w-100">
+                    <option value="Delhi">Delhi</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="UP">UP</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Karnataka">Jammu & Kashmir</option>
+                    <option value="Karnataka">Goa</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row my-3">
+                <div class="col-3">
+                  <p>Address</p>
+                </div>
+                <div class="col-9">
+                  <textarea
+                    id=""
+                    rows="3"
+                    class="w-100"
+                    name="address"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col">
+                  <button
+                    class="btn w-100 fw-bold text-white fs-3"
+                    style="background-color: blueviolet"
+                  >
+                    REGISTER
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    <%- include('./common/footer.ejs')%>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

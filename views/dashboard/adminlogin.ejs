@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <title>Admin login</title>
+  </head>
+  <body>
+    <div class="col-6 m-3 mx-auto">
+      <form method="post" action="/dasboard" style="background-color: aqua; padding: 10%;" >
+        <h4 class="send text-center">Admin Login Form</h4>
+        <br />
+        <ul class="cont">
+          <li class="first list-unstyled mt-3">
+            <div class="info">
+              <span> Your Email</span>
+              <input type="email" name="email" />
+            </div>
+          </li>
+
+          <li class="first list-unstyled mt-3">
+            <div class="info">
+              <span>Password </span>
+              <input type="password" name="password" />
+            </div>
+          </li>
+
+          <li class="first list-unstyled mt-3">
+            <div class="info">
+              <input type="submit" value="login" />
+            </div>
+          </li>
+
+          <!-- <li class="first list-unstyled mt-3">
+                        <span>Don't have an account?</span>
+
+                       <a href="/signup"> <input type="submit" name="signup" value="signup"></a>
+
+                        </li> -->
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>

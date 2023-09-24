@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets\css\header.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    style="
+      background-image: url(assets/images/pattern-2.jpg);
+      background-size: 100%;
+    "
+  >
+    <%- include('./common/header.ejs')%>
+    <div class="container-fluid mt-5 mb-5">
+      <h1
+        class=" p-5 mt-5 text-start"
+        style="
+          width: 70%;
+          border-radius: 0% 200px 200px 0%;
+          position: absolute;
+          left: 0%;
+          background-color: blueviolet;
+        "
+      >
+        ORDER ONLINE
+      </h1>
+    </div>
+    <div class="container-fluid my-5" style="padding-top: 200px">
+      <div class="container-xxl bg-warning p-3 mt-5">
+        <nav
+          class="navbar navbar-expand-md bg-success justify-content-center py-3"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand text-center mx-auto" href="#"
+              >MENU<i class="fa-solid fa-bowl-food fa-2xl mx-2"></i
+            ></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarTogglerDemo02"
+            >
+              <ul class="navbar-nav fs-5 fw-bold nav-tabs border-0 online-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/online#ffood">FAST FOOD</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/online#starters">STARTERS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/online#main-course">MAIN COURSE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/online#chinese">CHINESE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/online#salads">SALADS</a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+        </nav>
+        <div class="container-xxl p-5 ">
+          
+          <div class="row my-3 ">
+            <% if(menudata.length>0) { %>
+              <% for(var i=0;i<menudata.length;i++) { %>
+            <div class="col-md-4 col-xs-12 " >
+              <div class="card">
+                <img src="<%= menudata[i].image %>" class="card-img-top" alt="..." style="height: 250px;">
+                <div class="card-body">
+                  <h5 class="card-title"><%= menudata[i].name %></h5>
+                  <p class="card-text"><%= menudata[i].about %></p>
+                  <a href="/details/<%= menudata[i]._id %>" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+               
+            </div>
+            <% } %>
+            <% } else { %>
+              no record found
+              <%} %>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./common/footer.ejs')%>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

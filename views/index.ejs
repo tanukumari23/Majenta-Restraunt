@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets\css\header.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body style="background-color: antiquewhite">
+    <%- include('./common/header.ejs')%>
+    <!-- carousel starts  -->
+
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img
+            src="assets/images/back2.webp"
+            class="d-block w-100"
+            alt="..."
+            height="700px"
+            style="opacity: 0.9"
+          />
+
+          <div
+            class="carousel-caption bg-warning py-3 mx-auto"
+            style="position: absolute; bottom: 25%"
+          >
+            <h1 style="font-weight: 900; color: black">MAGENTA</h1>
+            <p
+              style="
+                font-weight: 900;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+                color: white;
+                font-size: 20px;
+              "
+            >
+              We Make Food with Love For You And Your Loved Ones
+            </p>
+            <button
+              class="btn mx-auto my-2"
+              style="background-color: blueviolet"
+            >
+              <a href="/menu" class="btn fw-bold text-white">MENU</a>
+            </button>
+            <button
+              class="btn mx-auto my-2"
+              style="background-color: blueviolet"
+            >
+              <a href="/reservation" class="btn fw-bold text-white"
+                >RESERVATION</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img
+            src="assets/images/back.jpg"
+            class="d-block w-100"
+            alt="..."
+            height="700px"
+          />
+          <div
+            class="carousel-caption bg-white py-5 mx-auto"
+            style="position: absolute; bottom: 30%"
+          >
+            <p
+              style="
+                font-weight: 900;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+                color: black;
+                font-size: 40px;
+              "
+            >
+              VEGETARIAN CUISINE
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img
+            src="assets/images/back3.jpg"
+            class="d-block w-100"
+            alt="..."
+            height="700px"
+          />
+          <div
+            class="carousel-caption py-5 mx-auto bg-white"
+            style="position: absolute; bottom: 25%"
+          >
+            <p
+              style="
+                font-weight: 900;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+                color: black;
+                text-shadow: 7px 2px yellow;
+                font-size: 40px;
+              "
+            >
+              AESTHETIC VIBES WITH CALM ENVIRONMENT
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- carousel ends  -->
+
+    <div class="container-fluid bg-transparent py-5">
+      <div class="container-xxl bg-black" style="border: 3px solid black">
+        <div class="row">
+          <div class="col-md-6 p-0 backg"></div>
+          <div class="col-md-6 backg2 py-5">
+            <div
+              class="row py-5 text-center bg-white my-5 mx-3"
+              style="border-width: 5px; border-style: double"
+            >
+              <h3 class="my-3" style="font-weight: 800">THE HOME-STYLE FOOD</h3>
+              <p class="my-3">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
+                quos voluptatum accusamus porro similique velit cumque illo
+                aspernatur hic placeat?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container-fluid bg-warning p-5"
+      style="height: 250px; text-align: center"
+    >
+      <div class="container-xxl">
+        <h1 class="py-5 fw-bold">TRUSTED BRAND SINCE 1995.</h1>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-transparent my-5">
+      <div class="container-xxl bg-black" style="border: 3px solid black">
+        <div class="row">
+          <div class="col-md-6 backg3">
+            <h3
+              class="bg-white text-center py-5 my-5"
+              style="border-width: 5px; border-style: double"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              quasi molestiae, rem rerum cum enim expedita molestias ipsam harum
+            </h3>
+          </div>
+          <div class="col-md-6 py-3">
+            <video autoplay muted loop id="myVideo" width="100%" height="100%">
+              <source
+                src="/assets/images/pexels_videos_2736 (1080p).mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid my-5 bg-warning">
+      <div class="container-xxl p-3">
+        <div class="row py-5 text-center my-auto">
+          <h1 class="fw-bold mx-auto">OUR HEAD CHEFS</h1>
+        </div>
+        <div class="row my-5">
+          <div class="col-xl-3 col-sm-6">
+            <div class="card p-3 text-center bg-white mb-3">
+              <div
+                class="card-header bg-danger p-3"
+                style="border-radius: 50% 500%"
+              >
+                <div
+                  class="card-header bg-black p-5"
+                  style="border-radius: 500% 50%"
+                >
+                  <img
+                    src="https://png.pngtree.com/png-clipart/20190515/original/pngtree-chef-cooking-fried-chicken-and-delicious-sign-png-image_3635466.jpg"
+                    alt=""
+                    class="card-img"
+                    style="border-radius: 50% 50%; width: 100%"
+                  />
+                </div>
+              </div>
+              <div class="card-body my-2" style="border-top: 2px solid black">
+                <h3 class="card-title">CHEF</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6">
+            <div class="card text-center bg-white p-3 mb-3">
+              <div
+                class="card-header bg-danger p-3"
+                style="border-radius: 50% 500%"
+              >
+                <div
+                  class="card-header bg-black p-5"
+                  style="border-radius: 500% 50%"
+                >
+                  <img
+                    src="https://png.pngtree.com/png-clipart/20190515/original/pngtree-chef-cooking-fried-chicken-and-delicious-sign-png-image_3635466.jpg"
+                    alt=""
+                    class="card-img"
+                    style="border-radius: 50% 50%; width: 100%"
+                  />
+                </div>
+              </div>
+              <div class="card-body my-2" style="border-top: 2px solid black">
+                <h3 class="card-title">CHEF</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6">
+            <div class="card p-3 text-center mb-3">
+              <div
+                class="card-header bg-danger p-3"
+                style="border-radius: 50% 500%"
+              >
+                <div
+                  class="card-header bg-black p-5"
+                  style="border-radius: 500% 50%"
+                >
+                  <img
+                    src="https://png.pngtree.com/png-clipart/20190515/original/pngtree-chef-cooking-fried-chicken-and-delicious-sign-png-image_3635466.jpg"
+                    alt=""
+                    class="card-img"
+                    style="border-radius: 50% 50%; width: 100%"
+                  />
+                </div>
+              </div>
+              <div class="card-body my-2" style="border-top: 2px solid black">
+                <h3 class="card-title">CHEF</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6">
+            <div class="card p-3 text-center mb-3">
+              <div
+                class="card-header bg-danger p-3"
+                style="border-radius: 50% 500%"
+              >
+                <div
+                  class="card-header bg-black p-5"
+                  style="border-radius: 500% 50%"
+                >
+                  <img
+                    src="https://png.pngtree.com/png-clipart/20190515/original/pngtree-chef-cooking-fried-chicken-and-delicious-sign-png-image_3635466.jpg"
+                    alt=""
+                    class="card-img"
+                    style="border-radius: 50% 50%; width: 100%"
+                  />
+                </div>
+              </div>
+              <div class="card-body my-2" style="border-top: 2px solid black">
+                <h3 class="card-title">CHEF</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-xxl my-5">
+      <div class="row backg4 py-5">
+        <div class="col-6">
+          <img
+            src="assets/images/fresh-food-.png"
+            alt=""
+            class="animationnn w-50"
+            style="border-radius: 100%; position: relative; top: 0%; left: 0%"
+          />
+        </div>
+        <h1
+          class="bg-white text-center fs-bold py-3 my-auto fw-bold"
+          style="
+            width: 40%;
+            height: auto;
+            position: relative;
+            top: 0%;
+            right: 20%;
+          "
+        >
+          THIN CRUST PIZZA
+        </h1>
+      </div>
+    </div>
+
+    <div
+      class="container-fluid bg-warning p-5 my-5"
+      style="height: 250px; text-align: center"
+    >
+      <div class="container-xxl">
+        <h1 class="py-5 fw-bold">ORIGINAL TASTE SINCE 1995.</h1>
+      </div>
+    </div>
+    <div class="container-xxl backg5 py-5 my-5" style="height: auto">
+      <h1
+        class="bg-white fs-bold w-50 text-center py-5 mx-auto"
+        style="margin: 8% 0%"
+      >
+        AMMENITIES
+      </h1>
+    </div>
+    <div
+      class="container-fluid bg-warning py-5 my-5"
+      style="text-align: center; height: auto"
+    >
+      <div class="container-xxl">
+        <h1 class="py-2 fw-bold text-start m-auto">Order In a Click.</h1>
+        <h1 class="py-2 fw-bold text-start m-auto">The Delivery is on us.</h1>
+        <p class="py-2 fw-bold text-start m-auto">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+          veritatis repellat ipsa doloribus blanditiis quasi adipisci quibusdam
+        </p>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-transparent my-5">
+      <div
+        class="container-xxl bg-white p-5"
+        style="border: 5px double blueviolet"
+      >
+        <h1 class="text-center fw-bold px-0">
+          <i class="fa-solid fa-star" style="color: #f2eb1c"></i>OUR SPECIAL<i
+            class="fa-solid fa-star"
+            style="color: #f2eb1c"
+          ></i>
+        </h1>
+        <div class="row">
+          <div
+            class="col-md-3 col-xs-6 text-center mx-auto p-3 my-3"
+            style="border: 2px solid blueviolet"
+          >
+            <img
+              src="https://food-images.files.bbci.co.uk/food/recipes/chickensoup_1918_16x9.jpg"
+              alt=""
+              width="100%"
+              height="80%"
+            />
+            <h3 class="my-3">HOT AND SPICEY</h3>
+          </div>
+          <div
+            class="col-md-3 col-xs-6 text-center mx-auto p-3 my-3"
+            style="border: 2px solid blueviolet"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1081422898/photo/pan-fried-duck.jpg?s=612x612&w=0&k=20&c=kzlrX7KJivvufQx9mLd-gMiMHR6lC2cgX009k9XO6VA="
+              alt=""
+              width="100%"
+              height="80%"
+            />
+            <h3 class="my-3">HOT AND SPICEY</h3>
+          </div>
+          <div
+            class="col-md-3 col-xs-6 text-center mx-auto p-3 my-3"
+            style="border: 2px solid blueviolet"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAKLVQR7x7nvgkJ7dXM6VueElgOjgSX1JAIw&usqp=CAU"
+              alt=""
+              width="100%"
+              height="80%"
+            />
+            <h3 class="my-3">HOT AND SPICEY</h3>
+          </div>
+          <div
+            class="col-md-3 col-xs-6 text-center mx-auto p-3 my-3"
+            style="border: 2px solid blueviolet"
+          >
+            <img
+              src="https://www.acouplecooks.com/wp-content/uploads/2019/05/Chopped-Salad-001_1.jpg"
+              alt=""
+              width="100%"
+              height="80%"
+            />
+            <h3 class="my-3">HOT AND SPICEY</h3>
+          </div>
+        </div>
+        <div class="row">
+          <button
+            class="btn mx-auto text-center fw-bold fs-5 mt-5 px-auto w-50 text-white"
+            style="background-color: blueviolet"
+          >
+            <a href="/menu" style="text-decoration: none; color: white"
+              >ORDER ONLINE</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-warning p-3">
+      <p
+        class="fw-bold text-center w-50 mx-auto py-3 my-3 fs-3 rounded-3"
+        style="background-color: blueviolet"
+      >
+        FIND US
+      </p>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56062.07289892529!2d77.00389551320947!3d28.573379257061163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1a9c31eec4e1%3A0x39493976cba4c89a!2sDwarka%2C%20Delhi!5e0!3m2!1sen!2sin!4v1691957763604!5m2!1sen!2sin"
+        width="100%"
+        height="350"
+        style="border-radius: 0%"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <%- include('./common/footer.ejs')%>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
